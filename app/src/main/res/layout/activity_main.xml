@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03061E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="303dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="420dp"
+        android:gravity="center"
+        android:text="Please Wait..."
+        android:textColor="#00796B"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Nextbutton"
+        android:layout_width="171dp"
+        android:layout_height="51dp"
+        android:background="#0B1139"
+        android:text="Next"
+        android:textColor="#009688"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FalseBtn"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <Button
+        android:id="@+id/TrueBtn"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="#0B1139"
+        android:text="True"
+        android:textSize="20dp"
+        android:textColor="#00796B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
+
+    <Button
+        android:id="@+id/FalseBtn"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="#0B1139"
+        android:text="False"
+        android:textColor="#00796B"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TrueBtn" />
+
+    <Button
+        android:id="@+id/ScoreBtn"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:background="#0B1139"
+        android:text="Score"
+        android:textColor="#009688"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Nextbutton"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FalseBtn"
+        app:layout_constraintVertical_bias="0.295" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="Triva App"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Question_Number"
+        android:layout_width="178dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Question: 1/10"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
